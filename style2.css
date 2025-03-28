@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* sayfa yapısı */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(svrhsr.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* sol menü*/
+nav, aside {
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding-top: 50px;
+    text-align: center;
+}
+
+nav {
+    left: 0;
+    opacity: 0.8;
+}
+
+aside {
+    right: 0;
+    opacity: 0.8;
+
+}
+
+nav ul, aside ul {
+    list-style: none;
+    padding: 0;
+    opacity: 0.8    ;
+}
+
+nav ul li, aside ul li {
+    margin: 15px 0;
+}
+
+nav ul li a, aside ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, aside ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    margin: 0 150px; 
+}
+
+/* kartlarımın tasarımı */
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 400px;
+    object-fit:fill;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
